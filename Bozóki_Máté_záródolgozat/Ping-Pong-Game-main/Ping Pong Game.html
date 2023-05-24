@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="keywords" content="Document" />
+        <meta name="description" content="Your Description..." />
+        <title>Ping Pong Game</title>
+        <link rel="stylesheet" href="resources/css/style.css" />
+        <link
+            rel="shortcut icon"
+            href="resources/img/favicon.ico"
+            type="image/x-icon"
+        />
+    </head>
+    <body>
+        <canvas></canvas>
+        <div class="panel reveal">
+            <div class="stat"></div>
+            <h1>Ping Pong Játék</h1>
+            <span> Választj egy játék módot, majd kattints a játék kezdete gombra! <br> Játék módok:<div class="tooltip"></div></span>
+            <input type="text" hidden>
+            <ul class="gameMode">
+                <li class="mode baby" data-number=".05">Kezdő</li>
+                <li class="mode easy" data-number=".08">Könnyű</li>
+                <li class="mode normal" data-number=".1">Normál</li>
+                <li class="mode hard" data-number=".2">Nehéz</li>
+                <li class="mode insane" data-number=".3">Profi</li>
+            </ul>
+            <button class="play">Játék kezdete</button>
+        </div>
+        <script src="resources/js/main.js"></script>
+    </body>
+</html>
